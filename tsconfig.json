@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "types": ["node"]
+  },
+  "files": [
+    "index.ts"
+  ],
+}

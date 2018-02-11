@@ -1,10 +1,15 @@
-import {NgModule} from '@angular/core';
+import {NgModule, ModuleWithProviders} from '@angular/core';
 
 import {WbActionTrackerService} from './action-tracker.service';
 
-@NgModule({
-  providers: [
-    WbActionTrackerService,
-  ],
-})
-export class WbActionTracker {}
+@NgModule({})
+export class WbActionTrackerModule {
+  public static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: WbActionTrackerModule,
+      providers: [
+        WbActionTrackerService,
+      ],
+    };
+  }
+}
